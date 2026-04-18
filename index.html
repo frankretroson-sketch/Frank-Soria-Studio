@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio oficial de Frank Soria: música original, lanzamientos y enlaces a plataformas."
+    />
+    <title>Frank Soria | Proyecto Musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Cinzel:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <header class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <nav class="navbar container reveal">
+        <a class="brand" href="#inicio">
+          <span class="brand__mark">FS</span>
+          Frank Soria
+        </a>
+
+        <div class="nav__actions">
+          <a class="btn btn--ghost" href="#escuchar">Escuchar</a>
+          <a class="btn btn--glow" href="#plataformas">Plataformas</a>
+        </div>
+      </nav>
+
+      <div class="hero__content container reveal">
+        <p class="eyebrow">Proyecto musical · Frank Soria</p>
+        <h1>Ritmo, alma y raíz en cada canción.</h1>
+        <p class="hero__text">
+          Frank Soria es músico cubano, compositor, cantante y guitarrista. Su
+          propuesta fusiona funk latino, pop y ritmos afrocubanos con una
+          sensibilidad moderna y auténtica, creando una experiencia musical
+          elegante, bailable y emocional.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--glow" href="#escuchar">Escuchar ahora</a>
+          <a class="btn btn--secondary" href="#canciones">Discografía destacada</a>
+        </div>
+      </div>
+
+      <div class="hero__badge reveal">
+        <span>New Era</span>
+        <strong>FRANK SORIA</strong>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container reveal" id="plataformas">
+        <div class="section__heading">
+          <p class="eyebrow">Streaming oficial</p>
+          <h2>Conecta con la marca Frank Soria</h2>
+        </div>
+
+        <div class="platforms">
+          <a class="platform-card" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">
+            <span>YouTube</span>
+            <small>Videoclips, visualizers y directos</small>
+          </a>
+          <a class="platform-card" href="https://open.spotify.com/" target="_blank" rel="noreferrer noopener">
+            <span>Spotify</span>
+            <small>Singles, EPs y playlists curatoriales</small>
+          </a>
+          <a class="platform-card" href="https://soundcloud.com/" target="_blank" rel="noreferrer noopener">
+            <span>SoundCloud</span>
+            <small>Demos exclusivas y edits alternativos</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--focus" id="escuchar">
+        <div class="container reveal">
+          <div class="section__heading">
+            <p class="eyebrow">Listening Room</p>
+            <h2>Escucha canciones en modo inmersivo</h2>
+          </div>
+
+          <div class="player-grid">
+            <article class="player-card">
+              <div class="player-card__meta">
+                <h3>Luz en la Niebla</h3>
+                <p>Single · 2026</p>
+              </div>
+              <button type="button" class="play-btn" aria-label="Reproducir Luz en la Niebla">▶</button>
+              <div class="bar"><span style="width: 62%"></span></div>
+            </article>
+
+            <article class="player-card">
+              <div class="player-card__meta">
+                <h3>Ciudad de Cristal</h3>
+                <p>Live Session · 2026</p>
+              </div>
+              <button type="button" class="play-btn" aria-label="Reproducir Ciudad de Cristal">▶</button>
+              <div class="bar"><span style="width: 38%"></span></div>
+            </article>
+
+            <article class="player-card">
+              <div class="player-card__meta">
+                <h3>Pulso Nocturno</h3>
+                <p>Remix Cut · 2026</p>
+              </div>
+              <button type="button" class="play-btn" aria-label="Reproducir Pulso Nocturno">▶</button>
+              <div class="bar"><span style="width: 79%"></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="canciones">
+        <div class="container reveal">
+          <div class="section__heading">
+            <p class="eyebrow">Discografía destacada</p>
+            <h2>Canciones</h2>
+          </div>
+
+          <div class="songs-grid">
+            <article class="song-card">
+              <h3>Luz en la Niebla</h3>
+              <p>Atmosférica · Electrónica orgánica</p>
+              <span>03:42</span>
+            </article>
+            <article class="song-card">
+              <h3>Ciudad de Cristal</h3>
+              <p>Pop alternativo · Cinemático</p>
+              <span>04:08</span>
+            </article>
+            <article class="song-card">
+              <h3>Instante Eterno</h3>
+              <p>Ambient · Experimental vocal</p>
+              <span>05:11</span>
+            </article>
+            <article class="song-card">
+              <h3>Pulso Nocturno</h3>
+              <p>Electronic groove · Synthwave</p>
+              <span>03:58</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Frank Soria. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
