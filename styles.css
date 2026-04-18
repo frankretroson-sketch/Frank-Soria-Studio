@@ -219,14 +219,47 @@ h1 {
   background: linear-gradient(180deg, rgba(23, 18, 38, 0.7), rgba(8, 7, 12, 1));
 }
 
+.section--story {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(239, 215, 161, 0.14), transparent 42%),
+    radial-gradient(circle at 92% 85%, rgba(98, 213, 255, 0.12), transparent 44%),
+    linear-gradient(180deg, rgba(15, 12, 25, 0.95), rgba(9, 8, 14, 1));
+}
+
+.section--bio {
+  background:
+    radial-gradient(circle at 85% 16%, rgba(200, 164, 255, 0.16), transparent 40%),
+    radial-gradient(circle at 8% 85%, rgba(98, 213, 255, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(12, 10, 20, 0.95), rgba(8, 7, 14, 1));
+}
+
 .section__heading {
   margin-bottom: 2rem;
+}
+
+.section__heading--story h2 {
+  max-width: 26ch;
 }
 
 .section__heading h2 {
   margin-top: 0.45rem;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   max-width: 20ch;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.story-grid p {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  color: var(--muted);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.02), rgba(200, 164, 255, 0.12));
 }
 
 .platforms {
