@@ -226,6 +226,13 @@ h1 {
     linear-gradient(180deg, rgba(15, 12, 25, 0.95), rgba(9, 8, 14, 1));
 }
 
+.section--bio {
+  background:
+    radial-gradient(circle at 85% 16%, rgba(200, 164, 255, 0.16), transparent 40%),
+    radial-gradient(circle at 8% 85%, rgba(98, 213, 255, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(12, 10, 20, 0.95), rgba(8, 7, 14, 1));
+}
+
 .section__heading {
   margin-bottom: 2rem;
 }
